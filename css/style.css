@@ -1,0 +1,83 @@
+/*
+Colors:
+(Primary Color)Purple: #636388,
+Dark Purple: #434361
+Brown: #9F695A,
+Black: #2E2E3A,
+Background beige: #FFFBF5,
+White: #FFFFFF
+*/
+
+body {
+    background-color: #FFFBF5;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    
+}
+h1{
+    font-size: 2.5em;
+    font-family: 'Lora', serif;
+    letter-spacing: 2px;
+}
+h2 {
+    font-size: 2em;
+    font-weight: 400;  
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+h4 {
+    font-size: 1.35em;
+}
+
+img {
+    width: 100%;
+}
+img.profile {
+    width: 20%;
+}
+a {
+    color: #9F695A;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: #636388;
+}
+
+a:active {
+    color: #434361;
+}
+
+footer {
+    background-color: #2E2E3A;
+    color: white;
+}
+
+.icons {
+    width: 2.5%;
+}
+ .logo {
+    width: 5%;
+ }
+ .button {
+    background-color: #636388;
+    font-weight: 600;
+    color: #FFFBF5;
+    padding: 10px;
+    border-radius: 8px;
+}
+.button:hover,
+.button:active {
+    background-color: #FFFBF5;
+}
+.button.contact {
+    background-color: #FFFBF5;
+    color: #636388;
+}
+.button.contact:hover {
+    background-color: #2E2E3A;
+    color: #FFFBF5;
+}
