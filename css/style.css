@@ -7,21 +7,29 @@ Black: #252A32,
 Background grey: #F5FAFF,
 White: #FFFFFF
 */
+:root {
+    --blue: #3776B9;
+    --darkblue:#1c3f63;
+    --lightblue:#2D91FF;
+    --black: #262d39;
+    --background: #F5FAFF;
+    --white: #ffffff;
+  }
 * {
     box-sizing: border-box;
 }
 body {
-    background-color: #F5FAFF;
+    background-color: var(--background);
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    color: #2E2E3A;
+    color: var(--darkblue);
     
 }
 main {
     padding-top: 136px;
 }
 header {
-    background-color: #F5FAFF;
+    background-color: var(--white);
     text-align: center;
     padding: 10px 0;
     position: fixed;
@@ -45,22 +53,52 @@ nav > ul >li > a {
     font-family: 'Lora', serif;
     font-size: 1.25em;
     font-weight: 600;
-    color: #275687;
+    color: var(--blue);
 }
 nav > ul >li > a:active {
     padding: 0 15px;
     font-family: 'Lora', serif;
     font-weight: 600;
-    color: #3776B9;
+    color: var(--lightblue);
 }
 h1 {
     font-size: 2.5em;
     font-family: 'Lora', serif;
     letter-spacing: 2px;
 }
+h2 {
+    font-size: 2em;
+    font-weight: 400;  
+    text-align: center;
+    line-height: 1.5em;
+    font-family: 'Lora', serif;
+    margin: 0;
+
+}
+h3 {
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin: 0;
+    line-height: 1.5em;
+}
+h4 {
+    font-size: 1.35em;
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-weight: 400;
+    letter-spacing: 4px;
+
+}
+p {
+    font-size: 1.15em;
+    line-height: 1.5em;
+}
+
 #hero {
     text-align: center;
-    color: #FFFBF5;
+    color: var(--white);
     padding:100px;
     display: inline-block;
     width: 100%;
@@ -70,27 +108,7 @@ h1 {
     background-size: cover;
     justify-content: center; /* align horizontal */
     align-items: center; /* align vertical */
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 2em;
-    font-weight: 400;  
-    text-align: center;
-    line-height: 1.5em;
-}
-h3 {
-    font-size: 1.5em;
-    font-weight: 500;
-    letter-spacing: 4px;
-    margin: 0;
-}
-h4 {
-    font-size: 1.35em;
-}
-p {
-    font-size: 1.15em;
-    line-height: 1.5em;
+    margin-bottom: 80px;
 }
 img {
     width: 100%;
@@ -98,24 +116,21 @@ img {
 img.profile {
     width: 20%;
 }
-
 footer {
-    background-color: #2E2E3A;
-    color: white;
+    background-color: var(--darkblue);
+    color: var(--white);
 }
 a {
-    color: #9F695A;
+    color: var(--blue);
     text-decoration: none;
 }
 a:hover,
 a:focus {
-    color: #3776B9;
+    color: var(--lightblue);
 }
 a:active {
-    color: #3776B9;
+    color: var(--lightblue);
 }
-
-
 
 .icons {
     width: 48px;
@@ -124,9 +139,9 @@ a:active {
     max-width: 88px;
  }
  .button {
-    background-color: #F5FAFF;
+    background-color: var(--background);
     font-weight: 600;
-    color: #275687;
+    color: var(--blue);
     padding: 10px;
     border-radius: 8px 0px 8px 0px;
     display: inline-block;
@@ -135,17 +150,17 @@ a:active {
 
 .button:hover,
 .button:focus {
-    background-color: #F5FAFF;
-    color:#3776B9;
+    background-color: var(--background);
+    color: var(--lightblue);
 
 }
 .button.contact {
-    background-color: #FFFBF5;
-    color: #636388;
+    background-color: var(--background);
+    color: var(--blue);
 }
 .button.contact:hover {
-    background-color: #2E2E3A;
-    color: #FFFBF5;
+    background-color: var(--white);
+    color: var(--lightblue);
 }
 
 /*Layout Styling*/
@@ -165,8 +180,7 @@ a:active {
     grid-template-columns: 50% 50%;
     grid-template-rows: 100%;
     max-height: 680px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #bcc3c9;
+    margin: 80px 0px;
 }
 
 .column1 {
@@ -178,8 +192,8 @@ a:active {
     grid-column: 2;
     grid-row: 1;
     padding: 140px 42px;
-    color: #FFFFFF;
-    background-color: rgba(39, 86, 135, 0.6);
+    color: var(--white);
+    background-color: rgba(39, 86, 135, 0.8);
     margin-bottom: 20px;
 }
 
@@ -187,8 +201,8 @@ a:active {
         grid-column: 1;
         grid-row: 1;
         padding: 140px 42px;
-        color: #FFFFFF;
-        background-color: rgba(39, 86, 135, 0.6);
+        color: var(--white);
+        background-color: rgba(39, 86, 135, 0.8);
         align-items: center;
         margin-bottom: 20px;
 }
