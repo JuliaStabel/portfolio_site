@@ -117,9 +117,26 @@ a:active {
 footer {
     background-color: var(--darkblue);
     color: var(--white);
+    text-align: center;
+   
 }
-
-
+footer div.container {
+    background: linear-gradient(93.93deg, #275687 1.38%, rgba(204, 204, 231, 0) 86.93%);   
+    padding: 5% 0%;
+}
+.cr {
+    font-size: 10px;
+}
+.icon_row {
+    display: inline-flex;
+}
+footer a {
+    margin: 12px;
+}
+footer img {
+    width: 64px;
+    margin-bottom: 10px;
+}
 #hero {
     width: 100%;
     height: 480px;
@@ -144,7 +161,7 @@ footer {
 }
 
 .icons {
-    width: 48px;
+    height: 48px;
 }
  .logo {
     max-width: 88px;
