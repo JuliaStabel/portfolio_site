@@ -15,10 +15,13 @@
 </head>
 <body>
 	<header id="header">
-		<div class="container">
-            <a href="index.html">
-                <img class="logo" src="img/logo.svg" alt="test">
-            </a>
+		<div class="container_header">
+			<div class="logo">
+				<a href="index.html">
+					<img class="logo" src="img/logo.svg" alt="test">
+				</a>
+			</div>
+           <div>
 			<nav>
 				<ul>
 					<li><a href="index.html">Work</a></li>
@@ -26,59 +29,55 @@
 					<li><a href="#footer">Contact</a></li>
 				</ul>
 			</nav>
+		   </div>
 		</div>
 	</header>
 	<main id="main_home">
 <!-- Hero section  -->
 <div id="hero">
-	<div class="hero-txt">
-	<h4>Julia Stabel</h4>
+	<div id="hero-txt">
+	<h4 style="color: white">Julia Stabel</h4>
 	<h1>UX Designer</h1>
-	<h3>Driven by seeing the world from a user perspective and to fulfil their needs.</h3>
+	<h3>Driven by seeing the world from <span>a user perspective and to fulfil their needs.</span></h3>
 	</div>
 </div>
 <!--My work-->
 		<div id="work" class="container"> <!--work section-->
-			<h2>My Work</h2>
+			<h2 class="center">My Work</h2>
 			<div class="row"> <!--olive_row-->
-				<picture>
-					<source srcset="img/home_img/mobile/olive_title.png" media="(max-width:767px)">
-					<img class="title_image" src="img/home_img/olive_title.png" alt="My image" width="1200px">
-				</picture>
-					<div class="div_txt"><!--2nd column-->
-						<h3>Olive Health App</h3>
-						<p>Creating a health & wellbeing web app from scratch to record health & medical information, book doctor’s appointment in person or remote & manage health goals.</p>
-						<a class="button" href="olive.html">View Project</a>
-					</div>
-			</div>
-			<div class="row"><!--row_5stars4plants-->
+				<div class="column_1">
 					<picture>
-						<source srcset="img/home_img/mobile/stars_title.png" media="(max-width:767px)" width="600px">
-						<img class="title_image" src="img/home_img/stars_title.png" alt="My image" width="1200px">
+						<source srcset="img/home_img/mobile/olive_title.png" media="(max-width:639px)">
+						<img class="title_image" src="img/home_img/olive_title.png" alt="My image">
 					</picture>
-					<div class="div_txt"><!--2nd column-->
-						<h3>5 Stars 4 Plants</h3>
-						<p>Creating a design for a website for a nutritional advisor where customers can book calls, workshops or presentations about a plantbased diet.</p>
-						<a class="button" href="#">View Project</a>
-					</div>
+				</div>
+				<div class="column_2"><!--2nd column-->
+					<h3>Olive</h3>
+					<h4>Health App</h4>
+					<p>Creating a health & wellbeing web app from scratch to record health & medical information, book doctor’s appointment in person or remote & manage health goals.</p>
+					<a class="button" href="olive.html">View Project</a>
+				</div>
 			</div>
 			<div class="row"> <!--row_padis-->
-						<picture>
-						<source srcset="img/home_img/mobile/padis_title.png" media="(max-width:767px)" width="600px">
+				<div class="column_1">
+					<picture>
+						<source srcset="img/home_img/mobile/padis_title.png" media="(max-width:639px)" width="600px">
 						<img class="title_image" src="img/home_img/padis_title.png" alt="My image" width="1200px">
 						</picture>
-					<div class="div_txt"> <!--2ndcolumn-->
+					</div>
+				<div class="column_2"> <!--2ndcolumn-->
 					<h3>Padis</h3>
 					<p>Designing and optimizing the UX of a warehouse management software by identifying user problems. 
 						Redesigning and building new features on mobile and web to improve workflows.</p>
 					<a class="button" href="#">View Project</a>
 				</div>
-			</div>
+				
+			</div>	
 	</div>
 	</main>
 	<!-- For the footer  -->
 	<footer id="footer">
-		<div class="container"><!--content_wrapper-->
+		<div class="fd"><!--content_wrapper-->
 			<img src="img/footer/logo.svg">
 			<h2>Get in Touch!</h2>
 			<p>You want to collaborate or chat? You can contact me as follows: </p>

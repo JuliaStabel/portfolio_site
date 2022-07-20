@@ -16,10 +16,13 @@
 
 <body>
 	<header id="header">
-		<div class="container">
-            <a href="index.html">
-                <img class="logo" src="img/logo.svg" alt="test">
-            </a>
+		<div class="container_header">
+			<div class="logo">
+				<a href="index.html">
+					<img class="logo" src="img/logo.svg" alt="test">
+				</a>
+			</div>
+           <div>
 			<nav>
 				<ul>
 					<li><a href="index.html">Work</a></li>
@@ -27,40 +30,31 @@
 					<li><a href="#footer">Contact</a></li>
 				</ul>
 			</nav>
+		   </div>
 		</div>
 	</header>
-    <main id="main_about">
+    <main>
         <!--Not sure, if I need to use a div as a content wrapper here-->
-        <div class="container"> <!--content_wrapper-->
+        <div> <!--content_wrapper-->
         <div id="row_about"><!--1st row for picture & my story-->
-            <div class="pic">
+            <div id="col-abt-1">
                 <picture>
-                    <source srcset="img/about_img/profile.png" media="(max-width:767px)">
-                    <img class="profile" src="img/about_img/profile.png" alt="My image">
+                    <source srcset="img/about_img/pic_mobile.png" media="(max-width:1023px)">
+                    <img class="profile" src="img/about_img/pic_desktop.png" alt="My image">
                 </picture>
             </div>
-            <div class="story_text"><!--2ndcolumn-->
+            <div id="col-abt-2"><!--2ndcolumn-->
                 <h2>My Story</h2>
                 <p>I’m living in Hamburg currently and I’m originally from there. I lives a few years in a small town called Lübeck where I studied Information technology & Design. 
                     Currently I finished the UX Boot Camp from CareerFoundry and I’m working as a UX Designer for 
                     software company called padis where we constantly improving their warehouse management system.</p>
-                <a class="button" href="files/CV_Julia_Stabel.pdf" target="_blank">My CV</a>
+                <a class="sec_btn" href="files/CV_Julia_Stabel.pdf" target="_blank">My CV</a>
             </div>
         </div>
         <h2 class="center">Skills & Tools</h2>   
         <div id="row_about_2"> <!--2nd row-->
-            <div class="freetime"><!--1st column-->
-                <h2>My Freetime</h3>
-                <ul>
-                    <li>Playing basketball, do yoga & go for a run</li>
-                    <li>Vintage shopping</li>
-                    <li>Go into parks & vegan friendly restaurants </li>
-                    <li>Cooking excellent vegan dishes </li>
-                    <li>Playing the clarinet</li>
-                </ul>
-            </div>
             <div class="skills"><!--2ndcolumn---->
-                 <h2>My Skills</h3>
+                 <h4>My Skills</h4>
                 <ul>
                     <li>User Research</li>
                     <li>Information Architecture</li>
@@ -71,7 +65,7 @@
                 </ul>
                 </div>
             <div class="tools"><!--3rdcolumn---->
-                <h2>My Tools</h3>
+                <h4>My Tools</h4>
                 <ul>
                     <li>Figma</li>
                     <li>Adobe XD</li>
@@ -85,7 +79,7 @@
         </div>
     </main>
 	<footer id="footer">
-		<div class="container"><!--content_wrapper-->
+		<div class="fd"><!--content_wrapper-->
 			<img src="img/footer/logo.svg">
 			<h2>Get in Touch!</h2>
 			<p>You want to collaborate or chat? You can contact me as follows: </p>
