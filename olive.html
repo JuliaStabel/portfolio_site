@@ -15,10 +15,13 @@
     </head>
 <body>
 	<header id="header">
-		<div class="container">
-            <a href="index.html">
-                <img class="logo" src="img/logo.svg" alt="test">
-            </a>
+		<div class="container_header">
+			<div class="logo">
+				<a href="index.html">
+					<img class="logo" src="img/logo.svg" alt="test">
+				</a>
+			</div>
+           <div>
 			<nav>
 				<ul>
 					<li><a href="index.html">Work</a></li>
@@ -26,80 +29,93 @@
 					<li><a href="#footer">Contact</a></li>
 				</ul>
 			</nav>
+		   </div>
 		</div>
 	</header>
     <main id="main_olive">
         <div class="container"> <!--content_wrapper-->
-            <h2>Olive Health App</h2>
-            <picture>
-                <source srcset="img/work_img/olive/1200w/intro.png" media="(max-width:767px)" width="600px">
-				<img src="img/work_img/olive/1200w/intro.png" alt="Title" width="1200px">
-            </picture>
-            <div><!--row-->
-                <div> <!--1stcolumn---->
+            <h2 class="center">Olive Health App</h2>
+            <div class="row"> <!--olive_row-->
+				<div class="pj_col_1">
+					<picture>
+						<source srcset="img/home_img/mobile/olive_title.png" media="(max-width:639px)">
+						<img class="project_image" src="img/home_img/olive_title.png" alt="My image">
+					</picture>
+				</div>
+				<div class="pj_col_2"><!--2nd column-->
                     <h4>Project-Type</h4>
                     <p>Voluntary, Part-Time</p>
                     <h4>Role</h4>
                     <p>Single work as a UX Designer applying a user centered process on my own. 
                     Doing research, defining potential users, user flows, creating wireframes & a final design.</p>
-                </div>
-                <div><!--2ndcolumn-->
                     <h4>Duration</h4>
                     <p>6 Months</p>
                     <h4>Skills Developed</h4>
                     <p>UX Research, Information Architecture Wireframing, Usability Testing,UI Design & Prototyping</p>
-                </div>
-            </div>
-                <div><!--goal-->
-                    <h3>Goal</h3>
+				</div>
+			</div>
+                <div class="greenbox"><!--goal-->
+                    <h3 class="center">Goal</h3>
                     <p>The goal was to create a health and wellbeing platform to manage medical information, create healthy routines, 
                         book doctor appointments as well as access physical and mental wellbeing trainings.</p>
                 </div>
-                <div><!--User Centered Design Process-->
-                    <h3>User Centered Design Process</h3>
+                <div id="user_centered_process"><!--User Centered Design Process-->
+                    <h3 class="center">User Centered Design Process</h3>
                     <picture>
                         <source srcset="img/work_img/olive/1200w/user_centered_process.png" media="(max-width:767px)" width="600px">
                         <img src="img/work_img/olive/1200w/user_centered_process.png" alt="User Centered Process" width="1200px">
                     </picture>
                 </div>
-                <div>
-                    <h3>Problem Statement</h3>
+                <div class="greenbox">
+                    <h3 class="center">Problem Statement</h3>
                     <p>People struggle to focus on their health needs and conditions in this digital age. 
                         Potential users can easily get unmotivated or distracted if the effort is too much for the outcome.
                         There needs to be an easy way for the user to manage their health intuitive and fast.</p>
                 </div>
                 <div>
-                    <h3>Research Questions</h3>
-                    <div>
-                        <h4>How does the user tries to include healhty habits in their life?</h4>
+                    <h3 class="center">Research Questions</h3>
+                    <div class="question">
+                        <div class="number">1.</div>
+                        <div>
+                        <p>How does the user tries to include healhty habits in their life?</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4>What featues or tasks would the user like to use on a health app?</h4>
+                    <div class="question">
+                        <div class="number">2.</div>
+                        <div>
+                        <p>What featues or tasks would the user like to use on a health app?</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4>What are the motivations of the user to realize healhty habits?</h4>
+                    <div class="question">
+                        <div class="number">3.</div>
+                        <div>
+                        <p>What are the motivations of the user to realize healhty habits?</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4>What are the users pain points on existing health apps on the market?</h4>
+                    <div class="question">
+                        <div class="number">4.</div>
+                        <div>
+                        <p>What are the users pain points on existing health apps on the market?</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4>Under which circumstances users would use the olive health app?</h4>
+                    <div class="question">
+                        <div class="number">5.</div>
+                        <div>
+                        <p>Under which circumstances users would use the olive health app?</p>
+                        </div>
                     </div>
                 </div>
                 <div>
-                    <h3>Survey</h3>
+                    <h3 class="center">Survey</h3>
                     <picture>
                         <source srcset="img/work_img/olive/1200w/survey.png" media="(max-width:767px)" width="600px">
                         <img src="img/work_img/olive/1200w/survey.png" alt="Survey" width="1200px">
                     </picture>
                 </div>
-                <div> <!--row-->
-                    <h3>Personas</h3>
-                    <div> <!--1stcolumn-->
-                     <picture>
-                        <source srcset="img/work_img/olive/1200w/gabriela.png" media="(max-width:767px)" width="200px">
-                        <img src="img/work_img/olive/1200w/gabriela.png" alt="Gabriela" width="200px">
-                    </picture>
+                <h3 class="center">Personas</h3>
+                <div class="row"> <!--row-->
+                    <div id="col_gab"> <!--1stcolumn-->
+                    <img id="img_gab" src="img/work_img/olive/1200w/gabriela.png" alt="Gabriela" width="200px">
                     <h4>Gabriela</h4>
                     <ul>
                         <li>25 years old</li>
@@ -136,7 +152,7 @@
                         </ul>
                     </div>
                     </div>
-                    <div> <!--2ndcolumn-->
+                    <div id="col_mar"> <!--2ndcolumn-->
                         <picture>
                            <source srcset="img/work_img/olive/1200w/marcus.png" media="(max-width:767px)" width="200px">
                            <img src="img/work_img/olive/1200w/marcus.png" alt="Marcus" width="200px">
@@ -179,34 +195,34 @@
                        </div>
                 </div>
                 <div><!--User Flow-->
-                    <h3>User Flows</h3>
+                    <h3 class="center">User Flows</h3>
                     <picture>
                         <source srcset="img/work_img/olive/1200w/user_flows.png" media="(max-width:767px)" width="600px">
                         <img src="img/work_img/olive/1200w/user_flows.png" alt="User Flows" width="1200px">
                     </picture>
                 </div>
                 <div><!--Site Map-->
-                    <h3>Site Map</h3>
+                    <h3 class="center">Site Map</h3>
                     <picture>
                         <source srcset="img/work_img/olive/1200w/site_map.png" media="(max-width:767px)" width="600px">
                         <img src="img/work_img/olive/1200w/site_map.png" alt="Site Map" width="1200px">
                     </picture>
                 </div>
                 <div><!--Wireframes-->
-                    <h3>Wireframes</h3>
+                    <h3 class="center">Wireframes</h3>
                     <picture>
                         <source srcset="img/work_img/olive/1200w/wireframes.png" media="(max-width:767px)" width="600px">
                         <img src="img/work_img/olive/1200w/wireframes.png" alt="Wireframes" width="1200px">
                     </picture>
                 </div>
                 <div><!--Final Mockups-->
-                    <h3>Final Mockups</h3>
+                    <h3 class="center">Final Mockups</h3>
                     <picture>
                         <source srcset="img/work_img/olive/1200w/mockups.png" media="(max-width:767px)" width="600px">
                         <img src="img/work_img/olive/1200w/mockups.png" alt="Mockups" width="1200px">
                     </picture>
-                    <div>
-                        <a href="https://www.figma.com/proto/vpg0pA5gnfNIgdLp0GMgwE/Olive-app?page-id=443%3A4719&node-id=633%3A11684&viewport=2044%2C-588%2C0.51&scaling=scale-down&starting-point-node-id=633%3A11666">
+                    <div id="btn_pro">
+                        <a class="button" href="https://www.figma.com/proto/vpg0pA5gnfNIgdLp0GMgwE/Olive-app?page-id=443%3A4719&node-id=633%3A11684&viewport=2044%2C-588%2C0.51&scaling=scale-down&starting-point-node-id=633%3A11666">
                             Link to Prototype</a>
                     </div>  
                 </div>
