@@ -16,6 +16,7 @@
 <body>
 	<header id="header">
 		<div class="container_header">
+			<div class="navtoggle" id="myNavtoggle">
 			<div class="logo">
 				<a href="index.html">
 					<img class="logo" src="img/logo.svg" alt="test">
@@ -26,10 +27,14 @@
 				<ul>
 					<li><a href="index.html">Work</a></li>
 					<li><a href="about.html">About</a></li>
-					<li><a href="#footer">Contact</a></li>
+					<li><a href="#footer" onclick="menuToggle()">Contact</a></li>
+					<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+					<img class="menu" src="img/menu.svg" alt="menu" width="40px">
+					</a></li>
 				</ul>
 			</nav>
 		   </div>
+		</div>
 		</div>
 	</header>
     <main id="main_olive">
@@ -74,35 +79,21 @@
                 </div>
                 <div>
                     <h3 class="center">Research Questions</h3>
+                   
                     <div class="question">
-                        <div class="number">1.</div>
-                        <div>
-                        <p>How does the user tries to include healhty habits in their life?</p>
-                        </div>
+                        <p><span class="number">1.</span>How does the user tries to include healhty habits in their life?</p>
+                    </div>
+                    <div class="question"> 
+                        <p><span class="number">2.</span>What featues or tasks would the user like to use on a health app?</p>
                     </div>
                     <div class="question">
-                        <div class="number">2.</div>
-                        <div>
-                        <p>What featues or tasks would the user like to use on a health app?</p>
-                        </div>
+                        <p><span class="number">3.</span>What are the motivations of the user to realize healhty habits?</p>
                     </div>
                     <div class="question">
-                        <div class="number">3.</div>
-                        <div>
-                        <p>What are the motivations of the user to realize healhty habits?</p>
-                        </div>
+                        <p><span class="number">4.</span>What are the users pain points on existing health apps on the market?</p>
                     </div>
                     <div class="question">
-                        <div class="number">4.</div>
-                        <div>
-                        <p>What are the users pain points on existing health apps on the market?</p>
-                        </div>
-                    </div>
-                    <div class="question">
-                        <div class="number">5.</div>
-                        <div>
-                        <p>Under which circumstances users would use the olive health app?</p>
-                        </div>
+                        <p><span class="number">5.</span>Under which circumstances users would use the olive health app?</p>
                     </div>
                 </div>
                 <div>
@@ -250,6 +241,7 @@
 			<p class="cr">© Julia Stabel 2022</p>
 		</div>
 	</footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
