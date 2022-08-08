@@ -17,6 +17,7 @@ White: #FFFFFF
     --grey: #D2D9E0;
     --skyblue: #F0F7FF;
     --olivegreen: #E8ECEB;
+    --lightgrey: #F8F8FA;
   }
  
 * {
@@ -214,7 +215,7 @@ footer img {
  .button {
     background-color: var(--blue);
     letter-spacing: 0.1em;
-    font-size: 1em;
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
     color: var(--white);
@@ -259,8 +260,7 @@ footer img {
 /*Layout Styling*/
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
+    margin: 0px 16px;
 }
 /* Layout */
 
@@ -308,12 +308,12 @@ footer img {
 
 
 .pj_col_1 {
-    width: 90%;
+    width: 100%;
     margin: auto;
     margin-bottom: 16px;
 }
 .pj_col_2 {
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 850px;
     border: 1px solid var(--grey);
@@ -327,12 +327,13 @@ footer img {
     object-fit: cover;
 }
 .greenbox {
-    width: 90%;
+    width: 100%;
     margin: auto;
     border-radius: 80px 0px 80px 0px;
     background-color: var(--olivegreen);
     padding:32px;
 }
+
 .question {
     border: 1px solid var(--olivegreen);
     border-radius: 40px;
@@ -382,6 +383,29 @@ footer img {
 }
 #user_centered_process {
     margin: 64px auto;
+}
+/* Padis Page */
+#greybox {
+    margin: auto;
+    border-radius: 80px 0px 00px 0px;
+    background-color: var(--lightgrey);
+    padding: 48px 32px;
+
+}
+#ux_process {
+    background-image: url("../img/work_img/padis/grey_background.png");
+    color: var(--white);
+    padding: 48px 0px;
+    text-align: center;
+    margin-bottom: 48px;
+    border-radius: 80px 0px 80px 0px;
+
+}
+.projects {
+    margin-bottom: 80px;
+}
+.hide {
+    display: none;
 }
 /* About Page */
 
@@ -578,18 +602,41 @@ footer img {
     /* Project Page */
 
     .pj_col_1 {
-        width: 48%;   
+        width: 48%;
+        margin: unset;
+        margin: 0px;
     }
     .pj_col_2 {
         width: 48%;
+        margin: unset;
         height: 950px;
-        margin-top: 0;
     }
     .project_image {
         width: 100%;
         height: 950px;
         object-fit: cover;
     }
+
+    #greybox {
+        margin: auto;
+        border-radius: 80px 0px 00px 0px;
+        background-color: var(--lightgrey);
+        padding: 48px 32px;
+        width:82%;
+        height: 560px;
+    
+    }
+    #img_company {
+        height: 560px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    #ux_process {
+        background-image: unset;
+        padding: 0;
+    }
+  
 
 
     /* About Page */
@@ -678,11 +725,11 @@ footer img {
     }
      /* Project Page */
      .pj_col_1 {
-        width: 68%;
+        width: 58%;
         margin: unset;
     }
     .pj_col_2 {
-        width: 28%;
+        width: 38%;
         margin: unset;
     }
 /* Project Page */
@@ -698,14 +745,24 @@ footer img {
     display: flex;
     justify-content: center;
 }
+#greybox {
+    width: 53%;
+    margin: 0;
+}
+
 }
     
     
     
 /* X-Large screen size */
-@media only screen and (min-width: 1440px) {
+@media only screen and (min-width: 1216px) {
+    
     header {
         padding: 20px 0px;
+    }
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
     }
      /* Home Layout */
      .column_1 {
@@ -722,5 +779,17 @@ footer img {
         padding: 48px;
         padding-right: 56px;
         padding-left: 56px;
+    }
+
+    .project_image {
+        width: 100%;
+        height: 950px;
+        object-fit: cover;
+    }
+
+    /* Project Pages */
+    #greybox {
+        width: 62%;
+        margin: 0;
     }
 }
