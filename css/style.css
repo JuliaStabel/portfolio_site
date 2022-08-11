@@ -266,7 +266,11 @@ footer div.fd {
   border-radius: 8px 0;
   display: inline-block;
   box-shadow: 2px 4px 16px 0 var(--black);
-  transition: 0.3s background-color;
+  transition: 0.3s color;
+}
+
+.secbtn:hover {
+  color: var(--lightblue);
 }
 
 /* Layout Styling */
@@ -479,10 +483,6 @@ footer div.fd {
     display: inline-block;
   }
 
-  .container-header {
-    height: -webkit-fill-available;
-  }
-
   nav {
     width: auto;
     float: right;
@@ -495,7 +495,6 @@ footer div.fd {
     max-width: 1200px;
     justify-content: space-between;
     align-items: center;
-    height: -webkit-fill-available;
   }
 
   .navtoggle.responsive nav {
